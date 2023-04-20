@@ -1,0 +1,84 @@
+body{
+    display: grid;
+    grid-template-areas:
+        "cabeca cabeca cabeca cabeca"
+        "ladoss princi princi ladosx"
+        "rodape rodape rodape rodape";
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 9px;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:12px;
+
+}
+
+.grid_h{
+    grid-area: cabeca;
+    background-color: black;
+    padding: 10px;
+}
+
+.grid_m{
+    grid-area: princi;
+    background-color: rgb(153, 147, 147);
+    padding: 10px;
+}
+
+.grid_a{
+    grid-area: ladoss;
+    background-color: gray;
+    padding: 10px;
+}
+
+.grid_l{
+    grid-area: ladosx;
+    background-color: gray;
+    padding: 10px;
+}
+
+.grid_f{
+    grid-area: rodape;
+    background-color: black;
+    padding: 10px;
+}
+
+.logo{
+    width: 250px;
+    margin: 10px;
+    border-radius: 10%;
+    transition: 0.5s;
+}
+.logo:hover{
+    width: 250px;
+    margin: 10px;
+    border-radius: 50%;
+}
+ 
+.menu{
+    margin: 0;
+    padding:0;
+}
+ 
+ul li {
+    list-style: none; 
+    margin: 10px;
+    display: inline;
+}
+li a {
+    float: right;
+    padding: 5px 10px; 
+    margin:0;
+    border: 0px solid #f00; 
+    background: #903;
+    text-decoration: none;
+    color:#FFF;
+    /* cantos arredondados */
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+li a:hover {
+    background: #CCC;
+    color: #000; 
+    border-color: #000;
+}
