@@ -7,9 +7,10 @@ body{
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto;
     grid-gap: 9px;
-    font-family:Verdana, Geneva, sans-serif;
-    font-size:12px;
-
+    font-family:Arial, Helvetica, sans-serif;
+    font: size 16px;
+    background-color: black;
+    color: white;
 }
 
 .grid_h{
@@ -20,19 +21,19 @@ body{
 
 .grid_m{
     grid-area: princi;
-    background-color: rgb(153, 147, 147);
+    background-color: black;
     padding: 10px;
 }
 
 .grid_a{
     grid-area: ladoss;
-    background-color: gray;
+    background-color: black;
     padding: 10px;
 }
 
 .grid_l{
     grid-area: ladosx;
-    background-color: gray;
+    background-color: black;
     padding: 10px;
 }
 
@@ -43,42 +44,33 @@ body{
 }
 
 .logo{
-    width: 250px;
+    width: 200px;
     margin: 10px;
     border-radius: 10%;
+    border: 5px solid black;
     transition: 0.5s;
 }
+
 .logo:hover{
-    width: 250px;
+    width: 200px;
     margin: 10px;
     border-radius: 50%;
 }
  
-.menu{
-    margin: 0;
-    padding:0;
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+
 }
- 
-ul li {
-    list-style: none; 
-    margin: 10px;
-    display: inline;
-}
-li a {
-    float: right;
-    padding: 5px 10px; 
-    margin:0;
-    border: 0px solid #f00; 
-    background: #903;
+
+a{
+    color: white;
     text-decoration: none;
-    color:#FFF;
-    /* cantos arredondados */
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    border-radius:5px;
 }
-li a:hover {
-    background: #CCC;
-    color: #000; 
-    border-color: #000;
+
+.center{
+    text-align: center;
 }
