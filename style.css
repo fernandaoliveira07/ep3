@@ -1,65 +1,68 @@
 @import url('https://fonts.googleapis.com/css2? family=Ysabeau:wght@1;100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family= Poppins :wght@300 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Poppins :wght@300 & display=swap'); 
+/*esses links servem para usemos as fontes desse site na nossa página*/
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ysabeau', sans-serif;
-}
+} /*tags para zerar as configurações que já vem no css*/
 
 body{
-    display: grid;
+    display: grid; /*toda essa parte foi usada para criar as grades*/
     grid-template-areas:
         "cabeca cabeca cabeca cabeca"
         "ladoss princi princi ladosx"
         "rodape rodape rodape rodape";
     grid-template-columns: auto 400px 400px auto;
     grid-template-rows: auto auto auto;
-    grid-gap: 5px;
-    font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
+    grid-gap: 5px;/*serve para modificar o espaço entre as grades*/
+    font-family: Arial, sans-serif; /*para modificar a fonte das letras de todo o body*/
+    background-color: black; /*cor de fundo*/
+    color: white; /*cor das letras*/
 }
 
-.grid_h{
+.grid_h{ /*grade do header, cabeçalho*/
     grid-area: cabeca;
-    background-color: black;
-    padding: 5px;
-    width: 100%;
+    background-color: black; /*cor de fundo do header*/
+    padding: 5px; 
+    width: 100%; /*modifica o tamanho do header no geral*/
+    position: sticky; /*usado para fixar o header no topo da página*/
+    top: 0; /*posiciona o elemento a partir do topo da página*/
 }
 
-.grid_m{
+.grid_m{ /*grade principal, do meio*/
     grid-area: princi;
     background-color: black;
-    padding: 20px;
+    padding: 20px; /*tamanho da margem em todos os lados*/
 }
 
-.grid_m p{
-    font-family: 'Poppins';
-    font-size: 22px;
+.grid_m p{ /*modifica os paragrafos da parte principal*/
+    font-family: 'Poppins'; /*tipo de fonte*/
+    font-size: 22px; /*tamanho da letra*/
 }
 
-.grid_a{
-    grid-area: ladoss;
-    background-image: linear-gradient(to right, rgb(179, 14, 194), rgb(60, 16, 141), black);
+.grid_a{ /*modifica a lateral esquerda*/
+    grid-area: ladoss; /*serve para nomear a grade*/
+    background-image: linear-gradient(to right, rgb(179, 14, 194), rgb(60, 16, 141), black); /*serve para criar um degrade no fundo*/
     padding: 10px;
 }
 
-.grid_l{
+.grid_l{ /*lateral direita*/
     grid-area: ladosx;
     background-image: linear-gradient(to left, rgb(179, 14, 194), rgb(60, 16, 141), black);
     padding: 10px;
 }
 
-.grid_f{
+.grid_f{ /*grade do footer*/
     grid-area: rodape;
     background-color: black;
     padding: 10px;
-    height: auto;
-    width: 100vw;
+    height: auto; /*altura do footer, nesse caso esta como automatica*/
+    width: 100vw; /*largura, tamanho*/
     font-family: 'Poppins';
-    padding-top: 40px;
+    padding-top: 40px; /*indica qual distancia os elementos vão ficar da linha de cima do footer, o começo*/
 }
 
 .footer{
@@ -68,118 +71,110 @@ body{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-}
+} /*o conjunto de tags faz com que os itens do footer fiquem alinhados e centralizados*/
 
-.footer h3{
+.footer h3{ /*frase motivacional*/
     font-weight: 400;
     line-height: 3rem;
     color: rgb(156, 9, 175);
-}
+} /*modifica o tamanho e a cor da fonte*/
 
-.footer p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
+.footer p{ /*paragrafo do footer*/
+    max-width: 500px; /*estabelece a largura máxima do elemento*/
+    margin: 10px auto; 
+    line-height: 28px; /*altura da linha*/
     font-size: 14px;
 }
 
-.sociais2{
-    list-style: none;
+.sociais2{ /*redes sociais do footer*/
+    list-style: none; /*tira aquela bolinha do "li"*/
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
-}
+} /*o restante de tags serve para alinhar e centralizar os simbolos com os outros elementos do footer*/ 
 
 .sociais2 li{
-    margin: 0 10px;
+    margin: 0 10px; /*distancia entre eles*/
 }
 
-.sociais2 a{
-    text-decoration: none;
-    color: white;
+.sociais2 a{ 
+    color: rgb(216, 149, 255); /*cor dos simbolos, ancora*/
 }
 
-.sociais2 a li{
-    font-size: 1.1rem;
-    transition: color .4s ease;
+.sociais2 a li{ 
+    transition: color .4s ease; /*velocidade e tipo da transição*/
 }
 
-.sociais2 a:hover i{
-    color: rgb(156, 9, 175);
+.sociais2 a:hover i{ /*indica qual será a alteração ao passar o mouse por cima*/
+    color: rgb(150, 9, 168); /*nesse caso mudará a cor*/
 }
 
-.conteiner{
+.conteiner{ /*essa tag indica como os elementos do header irão aparecer*/
     max-width: 1080px;
     display: flex;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-}
+} /*nesse caso está centralizando eles e alinhando um ao lado do outro*/
 
-.logo,.sociais{
+.logo,.sociais{ /*essa parte modifica a distancia que a logo está dos simbolos de redes sociais*/
     width: 25%;
 }
 
 .logo img{
-    width: 135px;
-    cursor: pointer;
+    width: 135px; /*modifica o tamanho da logo*/
+    cursor: pointer; /*essa tag serve para quando passar o mouse por cima da imagem aparecer a cursor para clicar*/
 }
 
 .menu{
-    width: 50%;
+    width: 50%; /*modifica o tamanho do menu*/
 }
 
-.menu nav a{
+.menu nav a{ /*menu com link das outras páginas*/
     color: white;
     text-decoration: none;
-    padding-right: 50px;
+    padding-right: 50px; /*margem da direita*/
     font-size: 18px;
-    position: relative;
+    position: relative; /*determina que o elemento será posicionado de acordo com o fluxo natural da página*/
 }
 
-.menu nav a::after{
-    content: " ";
+.menu nav a::after{ /*o "::after" indica o momento que a ação será executada*/
+    content: " "; /*para gerar conteudo em um elemento, nesse caso está vazio*/
     width: 0px;
     height: 4px;
-    background-image: linear-gradient(45deg, black, rgb(60, 16, 141), rgb(179, 14, 194));
-    position: absolute;
+    background-image: linear-gradient(45deg, black, rgb(60, 16, 141), rgb(179, 14, 194)); /*criar um degrade*/
+    position: absolute; /*posiciona de acordo com o ponto superior esquerdo de outros elementos*/
     top: 25px;
     left: 0;
-    transition: width 0.5s ease-in-out;
-}
+    transition: width 0.5s ease-in-out; /*como e quando a transição será executada*/
+} /*esta parte serve para criar aquela linha abaixo do menu quando passa o mouse por cima*/
 
-.menu nav a:hover::after{
-    width: 45px;
-    color: white;
-}
+.menu nav a:hover::after{ /*depois que passar o mouse por cima do elemento*/
+    width: 45px; /*aumenta o tamanho da linha*/
+} 
 
-.cor_s{
-    color: black;
-    list-style-type: none;
-}
-
-.sociais button{
+.sociais button{ /*modifica todo o fundo do botão dos sociais*/
     width: 38px;
     height: 38px;
-    background-image: linear-gradient(45deg, black, rgb(60, 16, 141), rgb(179, 14, 194));
+    background-image: linear-gradient(45deg, black, rgb(60, 16, 141), rgb(179, 14, 194)); /*degrade no fundo*/
     border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-right: 10px;
+    border-radius: 8px; /*cantos arredondados*/
+    cursor: pointer; /*muda o cursor para a mãozinha*/
+    margin-right: 10px; /*margem da direita*/
 }
 
-.sociais button i{
-    font-size: 20px;
-    color: white;
+.sociais button i{ /*modifica expecificamente o símbolo, sem o fundo*/
+    font-size: 20px; /*tamanho*/
+    color: white; /*cor*/
 }
 
-.imagens{
+.imagens{ /*muda p tamanho de todas as imagens do site*/
      width: 400px;
 }
  
-p{
+p{ /*muda todos os paragrafos da página*/
     font-size: 15px;
-    text-align: justify;
-    position: inherit;
+    text-align: justify; /*alinhar em ambos os lados*/
+    position: inherit; /*serve para compactar os textos*/
 }
